@@ -1,0 +1,8 @@
+#!/bin/bash
+thisdir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+cd $thisdir
+JARFILE=ixa-pipe-tok-2.0.0-exec.jar
+mvn clean package
+mv target/$JARFILE .
+# rm -rf src
+# rm -rf target

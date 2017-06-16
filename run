@@ -1,0 +1,5 @@
+#!/bin/bash
+thisdir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+JARFILE=ixa-pipe-tok-2.0.0-exec.jar
+cd $thisdir
+java -Xmx1000m  -jar $JARFILE tok -l $naflang --inputkaf

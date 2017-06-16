@@ -1,0 +1,4 @@
+#!/bin/bash
+thisdir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+rm -rf $thisdir/src
+rm -rf $thisdir/target
